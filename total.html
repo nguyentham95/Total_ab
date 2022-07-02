@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính tổng các số trong khoảng a va b</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    let a = +prompt("Nhập số a");
+    let b = +prompt("Nhập số b");
+    let i, sum = 0;
+    if (a<b) {
+        for(i=a; i<=b; i++) {
+            sum = sum + i;
+        }
+        
+    } else {
+        for(i=b; i<=a; i++) {
+            sum = sum + i;
+        }
+        
+    }
+    document.write("Tổng các số trong khoảng từ " + a + " tới "+ b + " là: " + sum);
+</script>
